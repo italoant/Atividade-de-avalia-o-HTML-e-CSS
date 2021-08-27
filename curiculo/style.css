@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+header {
+    display: flex;
+}
+h1 {
+    font-size: 4vh;
+    margin-bottom: 0.71vh;
+}
+h2 {
+    font-size: 20px;
+}
+p {
+    font-size: 16px;
+}
+li {
+    margin: 0.4vh;
+    color: #222222;
+    text-align: justify;
+    line-height: 3vh;
+    width: 50vw;
+}
+a {
+    text-decoration: none;
+}
+footer {
+    text-align: center;
+    margin-top: 25vh;
+}
+/** Alterações globais **/
+
+#master {
+    margin: 11px;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    width: 80vw;
+}
+#right {
+    background-color: #19304f;
+    height: 126vh;
+    width: 32vw;
+    flex-flow: wrap;
+    margin: -19px;
+}
+header, #profile, #educ, #exp, #project {
+    margin-top: 2%;
+    margin-left: 5%;
+}
+
+/** alterações dos cont **/ 
+
+#profile p {
+    width: 70%;
+    color: #222222;
+}
+.name p {
+    margin-top: 0;
+}
+.contact h3, .contact p, .contact1, .txt {
+    color: #FFFFFF;
+}
+a:hover {
+    color: #19304f;
+}
+
+/** Alterações tag filhos **/
+
+.tit {
+    color: #19304f;
+    margin-bottom: 4vh;
+}
+
+#cont-contact {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+    height: 63vh;
+}  
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 5.9vh;
+}
+.git {
+    margin: 0px 7px;
+}
+.lin {
+    color: #222222;
+}
+.photo {
+    border-radius: 50%;
+    margin: 0vh 0.4vw;
+}
+#roda {
+    font-size: 25px;
+    color: whitesmoke;
+    text-shadow: 2px 2px #222222;
+}
+.name {
+    text-align: center;
+}
+.photo {
+    width: 16vh;
+}
+.txt {
+    border-bottom: 1.5px solid #FFFFFF;
+}
+/** Alterações gerais **/
+
+@media (max-width: 1095px) {
+    #right {
+        width: 75vw;
+        height: 137vh;
+    }
+    li {
+        margin-right: 2vw;
+    }
+} 
+@media (max-width: 925px) {
+    #right {
+        height: 150vh;
+    }
+}
+@media (max-width: 751px) {
+    #master {
+        display: block;
+    }
+    #leftcenter {
+        width: 127%;
+    }
+    #right {
+        width: 127%;
+        height: 80vh;
+        margin-top: 2vh;
+    }
+    body {
+        margin: 0;
+    }
+    footer {
+        margin-top: 1vh;
+    }
+    * {
+        text-align: center;
+    }
+    #profile p {
+        margin: auto;
+    }
+    header {
+        display: inline;
+    }
+    .photo {
+        width: 10vh;
+        margin-left: 6vw;
+    }
+    .name {
+        margin-left: 6vw;
+    }
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    li{
+        margin: 0;
+    }
+}
