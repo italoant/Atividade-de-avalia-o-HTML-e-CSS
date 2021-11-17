@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
+*{
+    margin: 0;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -35,16 +39,19 @@ footer {
 #master {
     margin: 11px;
     display: flex;
-    height: 100vh;
-    justify-content: center;
-    width: 80vw;
+    height: 100%;
+    margin: 0 auto;
+    width: 70vw;
 }
 #right {
     background-color: #19304f;
-    height: 126vh;
-    width: 32vw;
+    height: 125vh;
+    min-width: 20vw;
+    max-width: 90vw;
     flex-flow: wrap;
-    margin: -19px;
+}
+#leftcenter{
+    background-color: rgb(231, 231, 231);
 }
 header, #profile, #educ, #exp, #project {
     margin-top: 2%;
@@ -114,31 +121,21 @@ a:hover {
 }
 /** Alterações gerais **/
 
-@media (max-width: 1095px) {
-    #right {
-        width: 75vw;
-        height: 137vh;
-    }
+@media (max-width: 1400px) {
     li {
         margin-right: 2vw;
     }
 } 
 @media (max-width: 925px) {
-    #right {
-        height: 150vh;
-    }
-}
-@media (max-width: 751px) {
     #master {
         display: block;
     }
     #leftcenter {
-        width: 127%;
+        width: 100%;
     }
     #right {
-        width: 127%;
+        width: 100%;
         height: 80vh;
-        margin-top: 2vh;
     }
     body {
         margin: 0;
@@ -169,6 +166,9 @@ a:hover {
         flex-direction: column;
     }
     li{
-        margin: 0;
-    }
+        margin: 1% auto;
+    } 
+}
+@media (max-width: 751px) {
+
 }
